@@ -97,15 +97,14 @@ nav li {
     margin-bottom: 30px;
     padding: 10px;
     transition: all 1s;
-
 }
 
-
-li:hover {
+li:hover{
     color: antiquewhite;
     background-color: darksalmon;
     transform: scale(1.5);
 }
+
 
 #caja {
     display: flex;
