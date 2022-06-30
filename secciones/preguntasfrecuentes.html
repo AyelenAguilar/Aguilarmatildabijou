@@ -5,88 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
 <body>
 
     <header id="principio">
-        <h1>
-            <a href="../index.html">Matilda Bijou</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="insumos.html">INSUMOS</a>
-                </li>
-                <li>
-                    <a href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li>
-                    <a href="envios.html">ENVIOS</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light barra">
+            <div class="container-fluid">
+                <a class=" navbar-brand logo" href="../index.html"><img src="../img/logo.png" width="50" alt="">Matilda Bijou</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../secciones/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../secciones/insumos.html">Insumos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../secciones/preguntasfrecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../secciones/envios.html">Envíos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h2>Hacé tus consultas acá</h2>
-        <h3>Pregunta 1</h3>
-
-        <section class="secciones">
-
-
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, minima. Perspiciatis commodi, ipsum
-                    recusandae doloremque et aut non numquam eius itaque at laudantium dolorem ea aliquam deserunt
-                    repudiandae vero minima.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repudiandae obcaecati, illum
-                    inventore nulla reprehenderit dolorum accusantium ad, explicabo deserunt debitis sed commodi
-                    dignissimos? Dolore harum illum cum veniam nemo.
-
-                </p>
+        <h3>Hacé tus consultas acá</h3>
+        <div class="acordeon">
+            <div class="accordion-item fondoAcordeon">
+                <h2 class="accordion-header " id="headingOne">
+                    <button class="accordion-button collapsed preguntas" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pregunta #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="acordeonPreguntas">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste eaque sit, quo quis officiis molestiae sed? Placeat consequuntur facilis repudiandae distinctio optio repellat quia, ab rerum quisquam assumenda nam natus.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <h3>Pregunta 2</h3>
-        <section class="secciones">
-            <div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam exercitationem vel ab
-                    ducimus reprehenderit eveniet deserunt aliquid, et dolorum impedit sit dignissimos, magni ex itaque
-                    quasi quibusdam aut minima!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum libero, doloribus impedit fuga, quasi
-                    consequatur placeat reiciendis recusandae sint nulla nobis officia doloremque assumenda, voluptatem
-                    beatae velit vel unde est.
-
-                </p>
+            <div class="accordion-item fondoAcordeon">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed preguntas" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pregunta #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="acordeonPreguntas">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus inventore optio nihil nemo quidem id tempore, quo, nesciunt exercitationem obcaecati error cupiditate ipsam deleniti, perspiciatis unde at illo dignissimos.</p>
+                    </div>
+                </div>
             </div>
-
-        </section>
-
-        <h3>Pregunta 3</h3>
-        <section class="secciones">
-            <div>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam exercitationem vel ab
-                    ducimus reprehenderit eveniet deserunt aliquid, et dolorum impedit sit dignissimos, magni ex itaque
-                    quasi quibusdam aut minima!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem praesentium?
-                    Consequatur labore et qui sunt illo non, vel fuga maiores magni cupiditate. Qui tempore architecto
-                    quasi eum illum dolorum.
-
-                </p>
+            <div class="accordion-item fondoAcordeon">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed preguntas" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Pregunta #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="acordeonPreguntas ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt voluptatum fugit amet sequi culpa deleniti tempore error accusamus nostrum dolore corporis aspernatur, libero aperiam nobis doloremque, impedit eveniet doloribus.</p>
+                    </div>
+                </div>
             </div>
-
-        </section>
-
+        </div>
+        
         <h3>Deje aquí su consulta</h3>
 
 
@@ -130,7 +130,9 @@
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
 </body>
 
