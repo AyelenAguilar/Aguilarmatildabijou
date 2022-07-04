@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$fuente-principal:'Montserrat', sans-serif;
+$color-2x1:rgb(241, 206, 141);
+$color-descuento:rgb(241, 241, 91);
+$color-sinStock:rgb(194, 190, 190);
+
+$ingreso-salida:(
+    ingreso:rgb(193, 211, 92),
+    salida: rgb(240, 187, 187),
+);
+
+@each $producto, $color in $ingreso-salida{
+    .producto-#{$producto}{
+    background-color: $color;
+    }
+}

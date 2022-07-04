@@ -1,50 +1,57 @@
-@import'../base/base';
-
-*{
-    margin: 0;
-    padding: 0;
-}
+@import'../base/variables';
 
 header{
     background-color: blanchedalmond;
     margin-bottom: 20px;
-
+    width: 100%;
+    @media(min-width:768px){
+        background-color: rgb(211, 158, 141);
+    }
+    @media(min-width:1024px){
+        background-color: darksalmon;
+    }
 }
 
-nav{
+.barra-nav{
+    background-color: blanchedalmond;
     .container-fluid{
-    display: flex;
-    ul{
-        list-style: none;
+        .navbar-brand{
+        .logo{
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+        }}
+    @media(min-width:768px){
+        background-color: rgb(211, 158, 141);
     }
-    li{
-        margin-top: 50px;
-        margin-left: 110px;
-        text-align: center;
-        font-size: large;
-        font-family: $fuente-principal;
-        &:hover{
-            color: antiquewhite;
-            background-color: darksalmon;
-            transform: scale(1.3);
+    @media(min-width:1024px){
+        background-color: darksalmon;
+        display: flex;
+        
+        ul{
+            list-style: none;
         }
+            li{
+                margin-top: 50px;
+                margin-left: 110px;
+                text-align: center;
+                font-size: large;
+                font-family: $fuente-principal;
+                &:hover{
+                    color: antiquewhite;
+                    background-color: darksalmon;
+                    transform: scale(1.2);
+                }
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            }}
     }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-}
-
-}
-.logo{
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-
-}
 
 body {
     background-color: rgb(250, 245, 249);
@@ -58,48 +65,81 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    &-preguntas{
+        margin: 25px;
+        padding-top: 10px;
+    }
 }
 
 h1 {
     text-align: center;
     font-size: xx-large;
     font-family:$fuente-principal;
-    color: black;
+    color:black;
 }
 
 h2 {
     font-family:$fuente-principal;
-    text-align: center;
     margin: 10px;
-    justify-content: space-around;
-
-}
-
-h3 {
-    font-family:$fuente-principal;
-    margin: 30px;
+    font-size: x-large;
     text-align: center;
     background-color: darksalmon;
 }
 
-h4 {
+h3 {
     font-family:$fuente-principal;
     margin: 10px;
 }
 
-.imagenes{
+
+.producto{
     background-color: antiquewhite;
     width: 300px;
     padding-top: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    &-descuento{
+        @include avisos($color-descuento)
+    }
+    &-2x1{
+        @include avisos($color-2x1)
+    }
+    &-sinStock{
+        @include avisos ($color-sinStock)
+    }
+    }
+    
+
+.aviso{
+    font-size:medium;
+    font-weight: bolder;
+    font-family: $fuente-principal;
+    &-descuento{
+        @include titulo-avisos($color:yellow)
+    }
+    &-2x1{
+        @include titulo-avisos($color:rgb(223, 154, 27))
+    }
+    &-ingreso{
+        @include titulo-avisos($color:green)
+    }
+    &-salida{
+        @include titulo-avisos($color:red)
+    }
 }
+
 
 .botonCompra{
     background-color: darksalmon;
     margin-top: 20px;
     margin-bottom: 20px;
+    @media(min-width:768px){
+        background-color: rgb(211, 158, 141);
+    }
+    @media(min-width: 1024px){
+        background-color: darksalmon;
+    }
 }
 
 footer {
@@ -109,4 +149,10 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
+    @media(min-width:768px){
+        background-color: rgb(211, 158, 141);
+    }
+    @media(min-width:1024px){
+        background-color: darksalmon;
+    }
 }

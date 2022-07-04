@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.btn-stock {
+  background-color: gray;
+  color: black; }
+
+.producto-ingreso {
+  background-color: #c1d35c; }
+
+.producto-salida {
+  background-color: #f0bbbb; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -6,32 +17,44 @@
 header {
   background-color: blanchedalmond;
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    header {
+      background-color: #d39e8d; } }
+  @media (min-width: 1024px) {
+    header {
+      background-color: darksalmon; } }
 
-nav .container-fluid {
-  display: flex; }
-  nav .container-fluid ul {
-    list-style: none; }
-  nav .container-fluid li {
-    margin-top: 50px;
-    margin-left: 110px;
-    text-align: center;
-    font-size: large;
-    font-family: "Montserrat", sans-serif; }
-    nav .container-fluid li:hover {
-      color: antiquewhite;
+.barra-nav {
+  background-color: blanchedalmond; }
+  .barra-nav navbar-brand .logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large; }
+  @media (min-width: 768px) {
+    .barra-nav {
+      background-color: #d39e8d; } }
+  @media (min-width: 1024px) {
+    .barra-nav {
       background-color: darksalmon;
-      transform: scale(1.3); }
-  nav .container-fluid a {
-    text-decoration: none;
-    color: black; }
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: x-large; }
+      display: flex; }
+      .barra-nav ul {
+        list-style: none; }
+      .barra-nav li {
+        margin-top: 50px;
+        margin-left: 110px;
+        text-align: center;
+        font-size: large;
+        font-family: "Montserrat", sans-serif; }
+        .barra-nav li:hover {
+          color: antiquewhite;
+          background-color: darksalmon;
+          transform: scale(1.2); }
+      .barra-nav a {
+        text-decoration: none;
+        color: black; } }
 
 body {
   background-color: #faf5f9;
@@ -45,6 +68,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around; }
+  .secciones-preguntas {
+    margin: 25px;
+    padding-top: 10px; }
 
 h1 {
   text-align: center;
@@ -68,18 +94,43 @@ h4 {
   font-family: "Montserrat", sans-serif;
   margin: 10px; }
 
-.imagenes {
+.producto {
   background-color: antiquewhite;
   width: 300px;
   padding-top: 20px;
   margin: 10px;
   text-align: center;
   border-radius: 10px; }
+  .producto-descuento {
+    background-color: #f1f15b; }
+  .producto-2x1 {
+    background-color: #f1ce8d; }
+  .producto-sinStock {
+    background-color: #c2bebe; }
 
-.botonCompra {
+.aviso {
+  font-size: medium;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif; }
+  .aviso-descuento {
+    background-color: yellow; }
+  .aviso-2x1 {
+    background-color: #df9a1b; }
+  .aviso-ingreso {
+    background-color: green; }
+  .aviso-salida {
+    background-color: red; }
+
+.botonCompra, .btn-stock {
   background-color: darksalmon;
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .botonCompra, .btn-stock {
+      background-color: #d39e8d; } }
+  @media (min-width: 1024px) {
+    .botonCompra, .btn-stock {
+      background-color: darksalmon; } }
 
 footer {
   background-color: blanchedalmond;
@@ -88,16 +139,28 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 20px; }
+  @media (min-width: 768px) {
+    footer {
+      background-color: #d39e8d; } }
+  @media (min-width: 1024px) {
+    footer {
+      background-color: darksalmon; } }
 
 nav li {
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
   list-style: none;
   text-align: center;
+  align-items: center;
   margin-bottom: 30px;
   padding: 10px;
-  gap: 10px;
-  transition: all 1s; }
+  gap: 10px; }
+  nav li:hover {
+    color: antiquewhite;
+    background-color: darksalmon;
+    transform: scale(1.2);
+    transition: all 1s; }
 
 #caja {
   display: flex;
@@ -115,6 +178,12 @@ nav li {
   align-content: center;
   justify-content: center; }
 
+aside {
+  grid-area: aside; }
+
+.contenedor {
+  grid-area: contenedor; }
+
 #grilla {
   background-color: burlywood;
   display: grid;
@@ -124,103 +193,11 @@ nav li {
   align-items: center;
   justify-items: center;
   min-width: 100%; }
-
-@media (min-width: 768px) {
-  header {
-    background-color: #d39e8d;
-    margin-bottom: 20px; }
-  footer {
-    background-color: #d39e8d;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px; }
-  aside {
-    grid-area: aside; }
-  .contenedor {
-    grid-area: contenedor; }
-  #grilla {
-    background-color: burlywood;
-    display: grid;
-    grid-template-areas: "aside" "contenedor";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center; }
-  nav ul li {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 50px;
-    margin-left: 120px;
-    text-align: center;
-    font-size: large;
-    font-family: 'Montserrat', sans-serif; }
-  nav li {
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 10px;
-    transition: all 1s; }
-  .ubicacion {
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: burlywood; }
-  .botonCompra {
-    background-color: #d39e8d;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
-
-@media (min-width: 1024px) {
-  header {
-    background-color: darksalmon;
-    margin-bottom: 20px; }
-  footer {
-    background-color: darksalmon;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px; }
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 50px;
-    margin-left: 120px;
-    text-align: center;
-    font-size: large;
-    font-family: 'Montserrat', sans-serif; }
-  #grilla {
-    background-color: burlywood;
-    display: grid;
-    grid-template-areas: "aside contenedor" "aside contenedor";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center; }
-  #caja {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around; }
-  .ubicacion {
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: burlywood; }
-  .barra {
-    background-color: darksalmon; }
-  .botonCompra {
-    background-color: darksalmon;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
+  @media (min-width: 1024px) {
+    #grilla {
+      grid-template-areas: "aside contenedor" "aside contenedor";
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr 1fr; } }
 
 .envios {
   border-radius: 20px;
@@ -235,9 +212,19 @@ nav li {
   margin: 20px;
   padding-top: 10px; }
 
-.preguntas {
+.btn-preguntas {
   background-color: blanchedalmond;
   margin-bottom: 20px; }
 
-.acordeon {
+.contenedor-acordeon {
   margin: 20px; }
+
+.btn-stock {
+  background-color: gray;
+  color: black; }
+
+.producto-ingreso {
+  background-color: #c1d35c; }
+
+.producto-salida {
+  background-color: #f0bbbb; }
