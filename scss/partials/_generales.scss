@@ -14,50 +14,29 @@ header{
 
 .barra-nav{
     background-color: blanchedalmond;
-    .container-fluid{
-        .navbar-brand{
-        .logo{
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            font-size: x-large;
-        }}
+    
+    li{
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-left: 90px;
+        text-align: center;
+        justify-content: center;
+    }
     @media(min-width:768px){
         background-color: rgb(211, 158, 141);
+        
     }
     @media(min-width:1024px){
         background-color: darksalmon;
-        display: flex;
-        
-        ul{
-            list-style: none;
-        }
-            li{
-                margin-top: 50px;
-                margin-left: 110px;
-                text-align: center;
-                font-size: large;
-                font-family: $fuente-principal;
-                &:hover{
-                    color: antiquewhite;
-                    background-color: darksalmon;
-                    transform: scale(1.2);
-                }
-            }
-            a{
-                text-decoration: none;
-                color: black;
-            }
-            }}
     }
+}
 
 body {
     background-color: rgb(250, 245, 249);
     width: 100%;
     height: 100vh;
 }
+
 .secciones {
     background-color: burlywood;
     display: flex;
@@ -89,6 +68,7 @@ h2 {
 h3 {
     font-family:$fuente-principal;
     margin: 10px;
+    background-color:rgb(243, 179, 158);
 }
 
 
@@ -99,36 +79,7 @@ h3 {
     margin: 10px;
     text-align: center;
     border-radius: 10px;
-    &-descuento{
-        @include avisos($color-descuento)
     }
-    &-2x1{
-        @include avisos($color-2x1)
-    }
-    &-sinStock{
-        @include avisos ($color-sinStock)
-    }
-    }
-    
-
-.aviso{
-    font-size:medium;
-    font-weight: bolder;
-    font-family: $fuente-principal;
-    &-descuento{
-        @include titulo-avisos($color:yellow)
-    }
-    &-2x1{
-        @include titulo-avisos($color:rgb(223, 154, 27))
-    }
-    &-ingreso{
-        @include titulo-avisos($color:green)
-    }
-    &-salida{
-        @include titulo-avisos($color:red)
-    }
-}
-
 
 .botonCompra{
     background-color: darksalmon;

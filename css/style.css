@@ -1,22 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.btn-stock {
-  background-color: gray;
-  color: black; }
-
-.producto-ingreso {
-  background-color: #c1d35c; }
-
-.producto-salida {
-  background-color: #f0bbbb; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
 header {
   background-color: blanchedalmond;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  width: 100%; }
   @media (min-width: 768px) {
     header {
       background-color: #d39e8d; } }
@@ -26,35 +13,18 @@ header {
 
 .barra-nav {
   background-color: blanchedalmond; }
-  .barra-nav navbar-brand .logo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large; }
+  .barra-nav li {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 90px;
+    text-align: center;
+    justify-content: center; }
   @media (min-width: 768px) {
     .barra-nav {
       background-color: #d39e8d; } }
   @media (min-width: 1024px) {
     .barra-nav {
-      background-color: darksalmon;
-      display: flex; }
-      .barra-nav ul {
-        list-style: none; }
-      .barra-nav li {
-        margin-top: 50px;
-        margin-left: 110px;
-        text-align: center;
-        font-size: large;
-        font-family: "Montserrat", sans-serif; }
-        .barra-nav li:hover {
-          color: antiquewhite;
-          background-color: darksalmon;
-          transform: scale(1.2); }
-      .barra-nav a {
-        text-decoration: none;
-        color: black; } }
+      background-color: darksalmon; } }
 
 body {
   background-color: #faf5f9;
@@ -80,19 +50,15 @@ h1 {
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   margin: 10px;
-  justify-content: space-around; }
-
-h3 {
-  font-family: "Montserrat", sans-serif;
-  margin: 30px;
+  font-size: x-large;
   text-align: center;
   background-color: darksalmon; }
 
-h4 {
+h3 {
   font-family: "Montserrat", sans-serif;
-  margin: 10px; }
+  margin: 10px;
+  background-color: #f3b39e; }
 
 .producto {
   background-color: antiquewhite;
@@ -101,35 +67,16 @@ h4 {
   margin: 10px;
   text-align: center;
   border-radius: 10px; }
-  .producto-descuento {
-    background-color: #f1f15b; }
-  .producto-2x1 {
-    background-color: #f1ce8d; }
-  .producto-sinStock {
-    background-color: #c2bebe; }
 
-.aviso {
-  font-size: medium;
-  font-weight: bolder;
-  font-family: "Montserrat", sans-serif; }
-  .aviso-descuento {
-    background-color: yellow; }
-  .aviso-2x1 {
-    background-color: #df9a1b; }
-  .aviso-ingreso {
-    background-color: green; }
-  .aviso-salida {
-    background-color: red; }
-
-.botonCompra, .btn-stock {
+.botonCompra {
   background-color: darksalmon;
   margin-top: 20px;
   margin-bottom: 20px; }
   @media (min-width: 768px) {
-    .botonCompra, .btn-stock {
+    .botonCompra {
       background-color: #d39e8d; } }
   @media (min-width: 1024px) {
-    .botonCompra, .btn-stock {
+    .botonCompra {
       background-color: darksalmon; } }
 
 footer {
@@ -219,12 +166,6 @@ aside {
 .contenedor-acordeon {
   margin: 20px; }
 
-.btn-stock {
-  background-color: gray;
-  color: black; }
-
-.producto-ingreso {
-  background-color: #c1d35c; }
-
-.producto-salida {
-  background-color: #f0bbbb; }
+* {
+  margin: 0;
+  padding: 0; }
