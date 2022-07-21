@@ -7,29 +7,29 @@ header{
     @media(min-width:768px){
         background-color: rgb(211, 158, 141);
     }
-    @media(min-width:1024px){
+    @media(min-width:992px){
         background-color: darksalmon;
     }
 }
 
-.barra-nav{
+
+.barra-nav {
     background-color: blanchedalmond;
-    
-    li{
-        margin-right: 10px;
+    .nav-item{
+        margin-right: 20px;
         margin-top: 20px;
-        margin-left: 90px;
+        margin-left: 80px;
         text-align: center;
         justify-content: center;
     }
     @media(min-width:768px){
         background-color: rgb(211, 158, 141);
-        
     }
-    @media(min-width:1024px){
+    @media(min-width:992px){
         background-color: darksalmon;
     }
 }
+
 
 body {
     background-color: rgb(250, 245, 249);
@@ -37,8 +37,8 @@ body {
     height: 100vh;
 }
 
-.secciones {
-    background-color: burlywood;
+.secciones{
+    background-color:burlywood;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ body {
     &-preguntas{
         margin: 25px;
         padding-top: 10px;
-    }
+}
 }
 
 h1 {
@@ -88,7 +88,7 @@ h3 {
     @media(min-width:768px){
         background-color: rgb(211, 158, 141);
     }
-    @media(min-width: 1024px){
+    @media(min-width: 992px){
         background-color: darksalmon;
     }
 }
@@ -103,7 +103,7 @@ footer {
     @media(min-width:768px){
         background-color: rgb(211, 158, 141);
     }
-    @media(min-width:1024px){
+    @media(min-width:992px){
         background-color: darksalmon;
     }
 }
